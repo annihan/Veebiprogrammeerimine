@@ -11,8 +11,20 @@
   if($hourNow < 8){
 	  $partOfDay = "hommik";
   }
-  if($hourNow > 8){
+  if($hourNow > 8 and $hourNow < 16){
     $partOfDay = "parim aeg õppimiseks";
+  }
+  if($hourNow >= 16 and $hourNow < 19){
+    $partOfDay = "vaba aja tegevused";
+  }
+  if($hourNow >= 19 and $hourNow < 21){
+    $partOfDay = "õhtu";
+  }
+  if($hourNow >= 21 and $hourNow < 23){
+    $partOfDay = "hilisõhtu";
+  }
+  if($hourNow >= 23 and $hourNow < 3){
+    $partOfDay = "öö";
   }
 
   //info semestri kulgemise kohta
